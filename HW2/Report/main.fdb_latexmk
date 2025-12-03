@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1764437646.357 "main.xdv" "main.pdf" "main" 1764437646.78417 0
-  "main.xdv" 1764437646 2188 1d1badbbe69c08855dfe52e4083eb620 "xelatex"
+["xdvipdfmx"] 1764778674.9422 "main.xdv" "main.pdf" "main" 1764778675.45404 0
+  "main.xdv" 1764778674 5940 efcfa97d8f20860c3fe6b4e70cf90d90 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1764437645.5528 "d:/Github/Principle-of-AI_2025fall/HW2/Report/main.tex" "main.xdv" "main" 1764437646.78246 0
+["xelatex"] 1764778674.07909 "d:/Github/Principle-of-AI_2025fall/HW2/Report/main.tex" "main.xdv" "main" 1764778675.45149 0
   "c:/Windows/Fonts/msyh.ttc" 1743011939 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758548817 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1758548027 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -81,9 +81,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1758547234 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1758552129 5911578 5e111a5270f5d4016c349ff2db744d7b ""
   "c:/texlive/2025/texmf.cnf" 1758551946 713 e69b156964470283e0530f5060668171 ""
-  "d:/Github/Principle-of-AI_2025fall/HW2/Report/main.tex" 1764437639 1433 0bf7da2e79a78eccb5074383a1542b16 ""
-  "main.aux" 1764437646 32 3985256e7290058c681f74d7a3565a19 "xelatex"
-  "main.tex" 1764437639 1433 0bf7da2e79a78eccb5074383a1542b16 ""
+  "d:/Github/Principle-of-AI_2025fall/HW2/Report/main.tex" 1764778672 1983 dedb8e4d4c863acab2f5f4fa7d35080d ""
+  "main.aux" 1764778674 773 278d968ebc188a9e740761acf0ce96cd "xelatex"
+  "main.tex" 1764778672 1983 dedb8e4d4c863acab2f5f4fa7d35080d ""
   (generated)
   "main.aux"
   "main.log"
