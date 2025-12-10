@@ -2,7 +2,7 @@
 # encoding: utf-8
 # 为了进行图象分类，这里基于ResNet架构实现了一个深度卷积神经网络模型。
 # 模型共包括多个残差块，每个残差块包含两个卷积层以及一个残差连接。
-# 这里设置了4层layer，每层包含3个残差块，整体结构类似于ResNet50。
+# 这里设置了4层layer，各层分别包含3、4、6和3个残差块，整体结构类似于ResNet34。
 # 输出类别数为5，分别为daisy, dandelion, rose, sunflower, tulip。
 
 import torch
@@ -19,10 +19,10 @@ class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride = 1):
         super(ResidualBlock, self).__init__()
         self.conv1 = nn.Conv2d(in_channels, out_channels, 
-                               kernel_size=3, stride=stride, padding=1, bias=False) # # 3x3卷积层
+                               kernel_size=3, stride=stride, padding=1, bias=False) # 3x3卷积层
         self.bn1 = nn.BatchNorm2d(out_channels)
         self.conv2 = nn.Conv2d(out_channels, out_channels, 
-                               kernel_size=3, stride=1, padding=1, bias=False) # # 3x3卷积层
+                               kernel_size=3, stride=1, padding=1, bias=False) # 3x3卷积层
         self.bn2 = nn.BatchNorm2d(out_channels)
         self.relu = nn.ReLU(inplace=True)
         self.shortcut = nn.Sequential()
