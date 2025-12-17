@@ -37,7 +37,8 @@
 	tabsize=4
 }
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
-
+\renewcommand{\lstlistingname}{预测输出}
+\renewcommand{\lstlistlistingname}{预测输出列表}
 \begin{document}
 	\pagestyle{fancy}
 	\lhead{\kaishu 中国科学院大学}
@@ -237,7 +238,7 @@ def Train(num_classes, batch_size, lr, epochs, patience,
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 	\end{lstlisting}
 	\section{训练过程}
-    在模型训练过程中，我使用了前面提到的配置和超参数设置。训练过程最终没有触发早停机制，模型在100个epoch后完成训练，模型的在验证集上达到的最高的准确率为83.9\%。图\ref{fig:3.1}所示的为训练和验证过程中损失值和准确率的变化趋势，可以看到
+    在模型训练过程中，我使用了前面提到的配置和超参数设置。训练过程最终没有触发早停机制，模型在100个epoch后完成训练，模型的在验证集上达到的最高的准确率为83.9\%。图\ref{fig:3.1}所示的为训练和验证过程中损失值和准确率的变化趋势，可以看到训练集和验证集上的损失值均呈现下降趋势，而准确率则逐渐提升，表明模型在训练过程中有效的学习到了数据的特征。此外，可以看到验证集上的损失值和准确率在不部分时间都是优于训练集的，这可能得益于模型训练之前进行的数据增强操作，提升了模型的泛化能力。验证集上的准确率和损失值在第80轮后基本就趋于平稳，模型已经达到的较好的收敛的状态。值得注意的是，验证集上的准确率和损失值的波动相对训练集来说更为明显，这可能是由于验证集的样本量较小，导致评估结果受个别样本影响较大所致。
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=1\textwidth]{../Figure/accuracy_loss_plot.png}
@@ -245,5 +246,53 @@ def Train(num_classes, batch_size, lr, epochs, patience,
         \label{fig:3.1}
     \end{figure}
 	\section{结果分析}
+    在测试集上评估最终训练完成的模型，准确率达到100\%，不过这主要是因为测试集样本量太小，每个类别仅有1张图象，所以这一结果并不能充分反映模型的实际性能。图\ref{fig:4.1}所示的为验证集上的混淆矩阵，图\ref{fig:4.2}所示的为验证集上各类别的精确率、召回率与F1分数。可以看到模型在大部分类别上都表现良好，只有少数类别之间存在一定的混淆，例如roses类别有20张图象被错误分类为tulips，从而导致roses类别的召回率仅为0.663，而tulips类别的精确率也只有0.766，两类的F1分数分别为0.754和0.787。模型在daisy和dendelion类别上表现尤为出色，召回率均超过了0.9，F1分数也都在0.85以上。
 
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.75\textwidth]{../Figure/confusion_matrix.png}
+        \caption{验证集上的混淆矩阵}
+        \label{fig:4.1}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.9\textwidth]{../Figure/metrics_plot.png}
+        \caption{各类别的精确率、召回率与F1分数}
+        \label{fig:4.2}
+    \end{figure}
+
+    为了更好的展示模型实际上对于图片的预测情况，这里展示了模型对于测试集的部分图片的预测情况，图\ref{fig:4.3}为模型对daisy和tulips的预测结果。可以看到模型是能够准确识别出这两张图片所对应的花卉类别的，但是模型对于两个图片预测的类别的概率分布存在较大的差异，对于daisy图片，如预测输出\ref{lst:daisy_pred}结果所示，模型对于daisy类别的预测概率高达0.9999，几乎可以确定无疑地将其分类为daisy，而对于其他类别的预测概率则非常低，均接近于0。这表明模型对于daisy类别的识别非常自信。而对于tulips图片，预测输出\ref{lst:tulip_pred}结果所示，模型对于tulips类别的预测概率为0.4321，虽然是最高的类别，但与其他类别（如daisy的0.2995和dandelion的0.2015）之间的差距并不大，这表明模型在对tulips类别的识别上存在一定的不确定性，可能是因为图片中花卉的特征与其他类别存在一定的相似性，导致模型难以做出明确的区分。这再一次说明我的模型目前对于某些类型尤其是tuplis的特征学习的还不够充分，未来可以尝试通过更多的数据增强、更复杂的模型架构或者更长时间的训练来提升模型的性能。
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.42\textwidth]{../Figure/daisy_predicted.png}
+        \includegraphics[width=0.56\textwidth]{../Figure/tulip_predicted.png}
+        \caption{模型对测试集图片的预测结果展示（左：daisy，右：tulips）}
+        \label{fig:4.3}
+    \end{figure}
+
+    \begin{lstlisting}[caption={Daisy prediction output},label={lst:daisy_pred}]
+Predicted Class: daisy
+Class Probabilities:
+    daisy      : 0.9999  |####################
+    dandelion  : 0.0001  |
+    roses      : 0.0000  |
+    sunflowers : 0.0000  |
+    tulips     : 0.0000  |
+    \end{lstlisting}
+
+    \begin{lstlisting}[caption={Tulip prediction output},label={lst:tulip_pred}]
+Predicted Class: tulips
+Class Probabilities:
+    daisy      : 0.2995  |#####
+    daisy      : 0.2995  |#####
+    dandelion  : 0.2015  |####
+    roses      : 0.0633  |#
+    sunflowers : 0.0036  |
+    tulips     : 0.4321  |#######
+    \end{lstlisting}
+
+    \section{总结}
+    本次作业中，我实现了一个基于ResNet架构的卷积神经网络模型来完成花卉图象分类任务，最终经过训练之后模型在验证集上达到了83.9\%的准确率。尽管测试集上的准确率达到了100\%，但由于测试集样本量较小，这一结果并不能充分反映模型的实际性能。经过具体分析，发现模型在某些类别上存在一定的混淆，尤其是roses和tulips类别之间，说明模型对这些类别的特征的学习还不够充分。
 \end{document}

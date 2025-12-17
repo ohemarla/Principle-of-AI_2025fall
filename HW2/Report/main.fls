@@ -196,4 +196,16 @@ OUTPUT main.xdv
 INPUT ../Figure/accuracy_loss_plot.png
 INPUT ../Figure/accuracy_loss_plot.png
 INPUT ../Figure/accuracy_loss_plot.png
+INPUT ../Figure/confusion_matrix.png
+INPUT ../Figure/confusion_matrix.png
+INPUT ../Figure/confusion_matrix.png
+INPUT ../Figure/metrics_plot.png
+INPUT ../Figure/metrics_plot.png
+INPUT ../Figure/metrics_plot.png
+INPUT ../Figure/daisy_predicted.png
+INPUT ../Figure/daisy_predicted.png
+INPUT ../Figure/daisy_predicted.png
+INPUT ../Figure/tulip_predicted.png
+INPUT ../Figure/tulip_predicted.png
+INPUT ../Figure/tulip_predicted.png
 INPUT main.aux
