@@ -1,10 +1,20 @@
 # Fdb version 4
-["xdvipdfmx"] 1769154991.91299 "main.xdv" "main.pdf" "main" 1769154992.42787 0
-  "main.xdv" 1769154991 3032 c58d070f6f1e74c88a46e30178fe75df "xelatex"
+["xdvipdfmx"] 1769856260.90473 "main.xdv" "main.pdf" "main" 1769856262.55681 0
+  "main.xdv" 1769856260 37756 c355f3b24f635e672bfe1bae21935e04 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1769154990.98271 "d:/Github/Principle-of-AI_2025fall/HW3/Report/main.tex" "main.xdv" "main" 1769154992.42545 0
+["xelatex"] 1769856259.88312 "d:/Github/Principle-of-AI_2025fall/HW3/Report/main.tex" "main.xdv" "main" 1769856262.55422 0
+  "../Figure/Files.png" 1769854013 142364 c82857d999442c999b59d40a5994d891 ""
+  "../Figure/Models.png" 1769853982 20042 d636b435b263f0add5a63264f46816cd ""
+  "../Figure/Ollama.png" 1769854227 9404 97187fd6829b693240b08d348cad1286 ""
+  "../Figure/Search1.png" 1769526378 81209 1b9d3a3f7b82d227ca43b1f3d5bb54e1 ""
+  "../Figure/Search2-1.png" 1769526490 48777 f8080c04bd691291e3f9c278f3db3e90 ""
+  "../Figure/Search2-2.png" 1769526534 25843 4beb425b95c96f85e12564e2243a8bb2 ""
+  "../Figure/Search2-3.png" 1769526556 41854 5770e5e28e5eba5951afd8cb9829dcfa ""
+  "../Figure/Talk1.png" 1769526326 180631 8b3109a8d63493fe4faa1e3e240d92d4 ""
+  "../Figure/Talk2.png" 1769526468 183138 6c2c3dde969188d301145b788748e6aa ""
+  "../Figure/Talk2file.png" 1769526750 90027 132fb38440e6420cfea2a4174d927a8c ""
   "c:/Windows/Fonts/msyh.ttc" 1743011939 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758548817 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1758548027 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -81,9 +91,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1758547234 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1758552129 5911578 5e111a5270f5d4016c349ff2db744d7b ""
   "c:/texlive/2025/texmf.cnf" 1758551946 713 e69b156964470283e0530f5060668171 ""
-  "d:/Github/Principle-of-AI_2025fall/HW3/Report/main.tex" 1769154989 1567 0c07e0620f0c1fea275f417b0a16c51a ""
-  "main.aux" 1769154991 465 7f2cb4dfddb3f9fed7a30cc67fffa76e "xelatex"
-  "main.tex" 1769154989 1567 0c07e0620f0c1fea275f417b0a16c51a ""
+  "d:/Github/Principle-of-AI_2025fall/HW3/Report/main.tex" 1769856258 7821 0ec052bf658dca2ab31d9fac66e7fe90 ""
+  "main.aux" 1769856260 2313 0cc27ab606cf9a23527bb632b7c91995 "xelatex"
+  "main.tex" 1769856258 7821 0ec052bf658dca2ab31d9fac66e7fe90 ""
   (generated)
   "main.aux"
   "main.log"

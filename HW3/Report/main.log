@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.22)  23 JAN 2026 15:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.22)  31 JAN 2026 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,6 +735,36 @@ Package fontspec Info:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
 
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+
+File: ../Figure/Ollama.png Graphic file (type bmp)
+<../Figure/Ollama.png>
+File: ../Figure/Models.png Graphic file (type bmp)
+<../Figure/Models.png>
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -745,19 +775,72 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] (./main.aux)
+]
+File: ../Figure/Files.png Graphic file (type bmp)
+<../Figure/Files.png>
+File: ../Figure/Talk1.png Graphic file (type bmp)
+<../Figure/Talk1.png>
+File: ../Figure/Search1.png Graphic file (type bmp)
+<../Figure/Search1.png>
+File: ../Figure/Talk2.png Graphic file (type bmp)
+<../Figure/Talk2.png>
+File: ../Figure/Search2-1.png Graphic file (type bmp)
+<../Figure/Search2-1.png>
+File: ../Figure/Search2-2.png Graphic file (type bmp)
+<../Figure/Search2-2.png>
+File: ../Figure/Search2-3.png Graphic file (type bmp)
+<../Figure/Search2-3.png>
+File: ../Figure/Talk2file.png Graphic file (type bmp)
+<../Figure/Talk2file.png>
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 11442 strings out of 468437
- 262560 string characters out of 5449120
- 875872 words of memory out of 5000000
- 39731 multiletter control sequences out of 15000+600000
- 628667 words of font info for 67 fonts, out of 8000000 for 9000
+ 11713 strings out of 468437
+ 274830 string characters out of 5449120
+ 893872 words of memory out of 5000000
+ 39977 multiletter control sequences out of 15000+600000
+ 628731 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,445b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,445b,413s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (1 page, 3032 bytes).
+Output written on main.xdv (5 pages, 37756 bytes).

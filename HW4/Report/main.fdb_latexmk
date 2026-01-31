@@ -1,15 +1,15 @@
 # Fdb version 4
-["xdvipdfmx"] 1769244929.13877 "main.xdv" "main.pdf" "main" 1769244931.23105 0
-  "main.xdv" 1769244928 146684 86b378e769f3b3227f878d90413751da "xelatex"
+["xdvipdfmx"] 1769856583.28436 "main.xdv" "main.pdf" "main" 1769856585.36897 0
+  "main.xdv" 1769856583 146456 179eafe8dd9d700673b75280868f1bcd "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1769244927.94157 "d:/Github/Principle-of-AI_2025fall/HW4/Report/main.tex" "main.xdv" "main" 1769244931.22567 0
+["xelatex"] 1769856582.07286 "d:/Github/Principle-of-AI_2025fall/HW4/Report/main.tex" "main.xdv" "main" 1769856585.36593 0
   "../Figure/Show.png" 1769186278 3116 0bb1fdb3bd9138c2c21305153e66af5e ""
-  "../Figure/ppo_cartpole_actor_loss.png" 1769231280 126365 3ce11fc556e77c438ef205b951afbdb8 ""
-  "../Figure/ppo_cartpole_critic_loss.png" 1769231280 99010 77c0e6c3762072e80e5dacc9e073b0fe ""
-  "../Figure/ppo_cartpole_ratio.png" 1769231281 108343 2816a461952e2184282b1172d2de480f ""
-  "../Figure/ppo_cartpole_returns_smooth.png" 1769231280 65040 67f9d2fc0de12e90a128cf07ea68148f ""
+  "../Figure/ppo_cartpole_actor_loss.png" 1769852086 126365 3ce11fc556e77c438ef205b951afbdb8 ""
+  "../Figure/ppo_cartpole_critic_loss.png" 1769852086 99010 77c0e6c3762072e80e5dacc9e073b0fe ""
+  "../Figure/ppo_cartpole_ratio.png" 1769852086 108343 2816a461952e2184282b1172d2de480f ""
+  "../Figure/ppo_cartpole_returns_smooth.png" 1769852086 65040 67f9d2fc0de12e90a128cf07ea68148f ""
   "c:/Windows/Fonts/msyh.ttc" 1743011939 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758548817 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1758547352 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -110,9 +110,9 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1758547234 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1758552129 5911578 5e111a5270f5d4016c349ff2db744d7b ""
   "c:/texlive/2025/texmf.cnf" 1758551946 713 e69b156964470283e0530f5060668171 ""
-  "d:/Github/Principle-of-AI_2025fall/HW4/Report/main.tex" 1769244928 15315 98ebd773ef5720cf047df8a3c0c467c1 ""
-  "main.aux" 1769244928 2818 e9572fed5624712bd7df0d84bd4c4646 "xelatex"
-  "main.tex" 1769244928 15315 98ebd773ef5720cf047df8a3c0c467c1 ""
+  "d:/Github/Principle-of-AI_2025fall/HW4/Report/main.tex" 1769856581 15279 a6571e6fad214677855d7bce060c5c9e ""
+  "main.aux" 1769856583 2818 e9572fed5624712bd7df0d84bd4c4646 "xelatex"
+  "main.tex" 1769856581 15279 a6571e6fad214677855d7bce060c5c9e ""
   (generated)
   "main.aux"
   "main.log"
